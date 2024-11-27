@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Final Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jQuery3.7.js" defer="defer"></script>
+	<script src="js/finalproject.js" defer="defer"></script>
+	<script src="https://kit.fontawesome.com/7a46201e59.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>COMP2132 - Final Project</h1>
+			<h2>Hangman Game</h2>
+		</header>
+		<main>		
+			<div class="grid_container">
+				<div class="item" id="game-image"></div>
+				<div class="item item2">
+				
+					<div class="hint-letter-text">
+							<div id="hint">Hint</div>
+							<label for="chosenletter">Choose a letter: </label>
+							<input type="text" id="chosenletter" name="chosenletter" value="" maxlength="1">
+							<button id="chosenletterBtn" type="button">Go</button>	
+							<p id="listpicked"></p>
+							<p id="alert"></p>
+					</div>
+						
+					<div class="game-text">
+						<div class="grid_text">
+							<div>
+								<p id="firstletter"></p>
+								<img id="line1" src="images/line.png" alt="Line">
+							</div>
+							<div>
+								<p id="secondletter"></p>
+								<img id="line2" src="images/line.png" alt="Line">
+							</div>
+							<div>
+								<p id="thirdletter"></p>
+								<img id="line3" src="images/line.png" alt="Line">
+							</div>
+							<div>
+								<p id="forthletter"></p>
+								<img id="line4" src="images/line.png" alt="Line">
+							</div>
+							<div>
+								<p id="fifthletter"></p>
+								<img id="line5" src="images/line.png" alt="Line">
+							</div>
+							<div>
+								<p id="sixthletter"></p>
+								<img id="line6" src="images/line.png" alt="Line">
+							</div>
+							<div>
+								<p id="seventhletter"></p>
+								<img id="line7" src="images/line.png" alt="Line">
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+		
+			<div class="popup">
+				<div class="popup-content">
+					<h2>Do you want to play Hangman?</h2>
+					<button class="playgame" type="button">Let's play!</button>
+				</div>
+			</div>
+			<div class="gameover">
+				<div class="popup-content">
+					<div id="end"></div>
+					<button class="playgame" type="button">Let's play again!</button>
+				</div>
+			</div>			
+		</main>
+		
+		<footer>
+			<h2>COMP2132 - Web Development with Javascript</h2>
+			<p>Camila Goncalves Pontes</p>
+			<p>BCID: A01419792</p>
+			<p><a href="https://www.linkedin.com/in/pontescamila/"><i class="fa-brands fa-linkedin"></i> /in/pontescamila</a></p>
+		</footer>
+	</div>
+</body>
+</html>
